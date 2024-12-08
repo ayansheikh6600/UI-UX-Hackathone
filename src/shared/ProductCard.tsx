@@ -1,15 +1,23 @@
+"use client"
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/redux/slices/cartSlice";
 
 interface ProductProps {
   image: StaticImageData;
   title: string;
-  price: string;
+  price: number;
   originalPrice?: string;
   badge?: "New" | "Sale" | any;
+  id:number
 }
 
-const ProductCard: React.FC<ProductProps> = ({ image, title, price, originalPrice, badge }) => {
+const ProductCard: React.FC<ProductProps> = ({ image, title, price, originalPrice, badge, id }) => {
+
+  const item = { image, title, price, originalPrice, badge, id }
+
+  const dispatch = useDispatch()
   return (
     <div className="relative bg-white rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
       {/* Badge */}
@@ -43,7 +51,7 @@ const ProductCard: React.FC<ProductProps> = ({ image, title, price, originalPric
       </div>
 
       {/* Cart Icon */}
-      <div className="absolute bottom-2 cursor-pointer right-2 bg-gray-200 rounded-full p-2 hover:bg-[#029FAE]">
+      <div onClick={()=>dispatch(addToCart(item))} className="absolute bottom-2 cursor-pointer right-2 bg-gray-200 rounded-full p-2 hover:bg-[#029FAE]">
         <svg
           width="22"
           height="22"

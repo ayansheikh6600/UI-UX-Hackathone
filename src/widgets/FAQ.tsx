@@ -13,7 +13,7 @@ const FAQSection: FC = () => {
     ];
 
     return (
-        <section className="py-12 bg-white">
+        <section className="py-12 px-3 sm:px-0 bg-white">
             <div className="max-w-6xl mx-auto text-center">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4 ">Questions Looks Here</h2>
                 <p className="text-gray-600 mb-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>

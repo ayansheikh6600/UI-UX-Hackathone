@@ -1,8 +1,32 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import chair2 from "@/assets/chair2.png"
 import Image from 'next/image'
-
+import { products } from '../page'
+import Link from 'next/link'
+import { useParams, useRouter } from 'next/navigation';
 const page = () => {
+ const params = useParams()
+
+ const [product, setProduct] = useState<any>()
+
+ const {id} =params
+ console.log(id);
+
+useEffect(()=>{
+    products?.map((item:any, index:any)=>{
+
+        if(index==id){
+            setProduct(item)
+    
+            return
+    
+        }
+    
+     })
+},[])
+ 
+
     return (
         <div className='bg-white'>
             <div className='container mx-auto '>
@@ -11,7 +35,7 @@ const page = () => {
 
                     <div>
 
-                        <Image className=' ' src={chair2} alt={"this"} height={300} width={1200} />
+                        <Image className=' ' src={product?.image} alt={"this"} height={300} width={1200} />
 
 
 
@@ -21,12 +45,10 @@ const page = () => {
                         <div className='flex flex-col gap-3 sm:gap-10 md:w-[80%] '>
 
                             <h1 className='text-3xl sm:text-5xl font-semibold text-[#272343] '>
-                                Library Stool <span className='md:block'>
-                                     Chair
-                                    </span>
+                            {product?.title || "Library Stool "}
                             </h1>
                             <div className='p-1 bg-[#029FAE] w-fit text-white rounded-2xl text-sm px-2'>
-                                $20.00 USD
+                              {product?.price+".00 USD" || "$20.00 USD"}
                             </div>
                             <hr />
                             <p className='text-[#272343]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing</p>
@@ -75,6 +97,35 @@ const page = () => {
                                     />
                                 </svg>Add to Cart
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className=" py-10">
+                    <div className="container mx-auto px-4">
+                        <div className="flex justify-between items-center mb-8">
+                            <h2 className="text-2xl font-bold">Featured Products</h2>
+                            <Link href="/products" className="text-black underline hover:underline">View all</Link>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                            {products.map((product, index) => index <=4 && (
+                                <div
+                                    key={index}
+                                    className="bg-white rounded-lg overflow-hidden"
+                                >
+                                    <Image
+                                        src={product.image}
+                                        alt={product.title}
+                                        className="w-full h- object-cover"
+                                        width={1200}
+                                        height={1200}
+                                    />
+                                    <div className="p-4 flex items-center justify-between">
+                                        <h3 className="text-sm font-medium">{product.title}</h3>
+                                        <p className=" text-sm font-bold">${product.price}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>

@@ -4,10 +4,10 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const ContactForm: React.FC = () => {
     return (
-        <div className="min-h-screen bg-white gap-10 flex flex-col items-center justify-center p-4">
+        <div className="min-h-screen bg-white gap-10 flex flex-col items-center justify-center sm:p-4">
 
 
-            <div className="w-[500px] text-center">
+            <div className="sm:w-[500px] px-3 sm:px-0 text-center">
                 <h2 className="text-2xl font-bold">Get In Touch With Us</h2>
                 <p className="text-sm text-[#9F9F9F]">
                     For more information about our products & services, feel free to
@@ -16,7 +16,7 @@ const ContactForm: React.FC = () => {
                 </p>
             </div>
 
-            <div className="max-w-4xl  rounded-lg p-8 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
+            <div className="max-w-4xl  rounded-lg p-3 sm:p-8 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
                 {/* Left Section */}
                 <div className="flex-1 space-y-10 ">
 

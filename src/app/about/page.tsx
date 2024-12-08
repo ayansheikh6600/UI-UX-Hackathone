@@ -8,7 +8,7 @@ import FeaturesSection from "@/widgets/Feature";
 
 const page = () => {
   return (
-    <div className="bg-white py-12 flex flex-col gap-12 sm:px-0 px-3">
+    <div className="bg-white py-12 flex flex-col gap-12  px-3">
 
 <AboutUs/>
 <FeaturesSection/>

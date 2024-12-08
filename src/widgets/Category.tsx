@@ -34,8 +34,8 @@ const categories: Category[] = [
 
 const TopCategories: React.FC = () => {
   return (
-    <div className="w-full container mx-auto p-8">
-      <h2 className="text-lg font-semibold mb-6 text-gray-800">Top Categories</h2>
+    <div className="w-full container mx-auto py-8">
+      <h2 className="text-3xl font-semibold mb-6 text-gray-800">Top Categories</h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         {categories.map((category) => (
           <div

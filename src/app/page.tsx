@@ -13,6 +13,7 @@ import pipedrive from "@/assets/pipedrive.png"
 import z from "@/assets/z.png"
 import bank from "@/assets/bank.png"
 import burnt from "@/assets/burnt.png"
+import ChairGallery from "@/widgets/Gallery";
 
 
 const CampaniesLogo: any = [zapier,
@@ -27,7 +28,7 @@ const CampaniesLogo: any = [zapier,
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white sm:px-0 px-3">
       {/* hero Section */}
       <HeroSection />
 
@@ -37,7 +38,7 @@ export default function Home() {
       </div>
 
       {/* Featured Products       */}
-      <div className="w-full container mx-auto flex flex-col gap-8   p-8 text-center">
+      <div className="w-full container mx-auto flex flex-col gap-8   py-8 text-center">
         <h2 className="text-3xl font-semibold text-start">Featured Product</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
@@ -50,10 +51,11 @@ export default function Home() {
       {/* Top Category's */}
       <TopCategories />
 
-      
+      {/* Chair Gallery's */}
+      <ChairGallery/>
 
 
-      <div className="w-full container mx-auto flex flex-col gap-8   p-8 text-center">
+      <div className="w-full container mx-auto flex flex-col gap-8   py-8 text-center">
         <h2 className="text-3xl font-semibold ">Our Product</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
