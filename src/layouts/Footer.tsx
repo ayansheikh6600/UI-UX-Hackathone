@@ -1,16 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from "@/assets/Logo.png"
+import paymentLogo from  "@/assets/PaymentMethod.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 px-6">
+    <footer className="bg-white border-t border-gray-200 py-6">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 px-6 py-7">
         {/* Logo and Description */}
         <div>
           <div className="flex items-center space-x-3">
-            <Image src={logo} alt="Comforty Logo" width={40} height={40} />
-            <h2 className="text-xl font-semibold">Comforty</h2>
+            <Image src={logo} alt="Comforty Logo" width={160} height={40} />
+            
           </div>
           <p className="text-gray-500 mt-4">
             Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum. Cras egestas purus.
@@ -45,7 +46,7 @@ const Footer = () => {
         </div>
 
         {/* Support Links */}
-        <div>
+        <div className=''>
           <h3 className="text-lg font-semibold text-gray-800">Support</h3>
           <ul className="mt-4 space-y-2 text-gray-500">
             <li><Link href="#" className="hover:text-gray-800">Help & Support</Link></li>
@@ -76,16 +77,14 @@ const Footer = () => {
           </p>
         </div>
       </div>
-
+ <hr />
       {/* Footer Bottom */}
-      <div className="border-t border-gray-200 mt-10 pt-6 text-center">
+      <div className=" container mx-auto flex items-center justify-between border-gray-200  pt-3 text-center">
         <p className="text-gray-500 text-sm">
           © 2021 – Blogy – Designed & Developed by Zakirsoft
         </p>
         <div className="flex justify-center space-x-3 mt-3">
-          <Image src="/paypal-logo.png" alt="PayPal" width={50} height={20} />
-          <Image src="/visa-logo.png" alt="Visa" width={50} height={20} />
-          <Image src="/mastercard-logo.png" alt="MasterCard" width={50} height={20} />
+          <Image src={paymentLogo} alt="PayPal"   className="grayscale"  />
         </div>
       </div>
     </footer>
