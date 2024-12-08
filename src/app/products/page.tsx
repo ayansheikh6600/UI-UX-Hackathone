@@ -27,8 +27,7 @@ export const products = [
 ]
 
 
-const Page = () => {
-  ;
+const page = () => {
 
   return (
     <div className="py-12 bg-white">
@@ -77,4 +76,4 @@ const Page = () => {
 }
 
 
-export default Page
+export default page
