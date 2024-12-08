@@ -6,11 +6,37 @@ import Image from "next/image";
 import { products } from "./products/page";
 import ProductCard from "@/shared/ProductCard";
 import TopCategories from "@/widgets/Category";
+import zapier from "@/assets/zapier.png"
+import moz from "@/assets/moz.png"
+import panda from "@/assets/panda.png"
+import pipedrive from "@/assets/pipedrive.png"
+import z from "@/assets/z.png"
+import bank from "@/assets/bank.png"
+import burnt from "@/assets/burnt.png"
+
+
+const CampaniesLogo: any = [zapier,
+  moz,
+  panda,
+  pipedrive,
+  z,
+  bank,
+  burnt]
+
+
 
 export default function Home() {
   return (
     <div className="bg-white">
+      {/* hero Section */}
       <HeroSection />
+
+      {/* Companeis Logo */}
+      <div className="flex flex-wrap container mx-auto gap-4 justify-between">
+        {CampaniesLogo?.map((item:any, key:number)=>(<Image className="w-32 h-32" key={key} src={item} alt="CompanyLogo" height={1000} width={1200} />))}
+      </div>
+
+      {/* Featured Products       */}
       <div className="w-full container mx-auto flex flex-col gap-8   p-8 text-center">
         <h2 className="text-3xl font-semibold text-start">Featured Product</h2>
 
@@ -21,8 +47,10 @@ export default function Home() {
         </div>
       </div>
 
-
+      {/* Top Category's */}
       <TopCategories />
+
+      
 
 
       <div className="w-full container mx-auto flex flex-col gap-8   p-8 text-center">
@@ -34,6 +62,8 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+
     </div>
   );
 }

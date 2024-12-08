@@ -7,10 +7,10 @@ const Header = () => {
     return (
         <header className="w-full">
             {/* Top Bar */}
-            <div className="bg-[#272343] text-white text-sm py-2">
+            <div className="bg-[#272343] text-white text-xs sm:text-sm py-2">
                 <div className="container mx-auto flex justify-between items-center px-6 text-opacity-70">
                     <p>✓ Free Shipping On All Orders Over $50</p>
-                    <div className="flex items-center space-x-4">
+                    <div className="sm:flex hidden items-center space-x-4">
                         <span>Eng</span>
                         <Link href="#" className="hover:underline">
                             FAQs
@@ -23,6 +23,8 @@ const Header = () => {
             </div>
 
             {/* Main Navigation */}
+
+
             <div className="bg-[#F0F2F3] py-4 shadow-sm">
                 <div className="container mx-auto flex justify-between items-center px-6">
                     {/* Logo */}
@@ -67,8 +69,8 @@ const Header = () => {
                         <Link href="/products" className="text-gray-600 hover:text-gray-900">
                             Product
                         </Link>
-                        <Link href="/pages" className="text-gray-600 hover:text-gray-900">
-                            Pages
+                        <Link href="/contact" className="text-gray-600 hover:text-gray-900">
+                            Contact
                         </Link>
                         <Link href="/about" className="text-gray-600 hover:text-gray-900">
                             About

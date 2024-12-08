@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface ProductProps {
-  image: string;
+  image: StaticImageData;
   title: string;
   price: string;
   originalPrice?: string;
-  badge?: "New" | "Sale";
+  badge?: "New" | "Sale" | any;
 }
 
 const ProductCard: React.FC<ProductProps> = ({ image, title, price, originalPrice, badge }) => {

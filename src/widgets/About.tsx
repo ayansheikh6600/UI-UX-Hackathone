@@ -3,7 +3,7 @@ import chair1 from '@/assets/AboutHero.png'
 
 const AboutUs: React.FC = () => {
   return (
-    <div className="flex justify-center items-center bg-white">
+    <div className="flex justify-center items-center bg-white ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 container mx-auto">
         {/* Text Section */}
         <div className="bg-[#007580] p-12 text-white flex flex-col justify-between">
