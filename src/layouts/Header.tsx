@@ -64,7 +64,7 @@ const Header = () => {
                         <Link href="/shop" className="text-gray-600 hover:text-gray-900">
                             Shop
                         </Link>
-                        <Link href="/product" className="text-gray-600 hover:text-gray-900">
+                        <Link href="/products" className="text-gray-600 hover:text-gray-900">
                             Product
                         </Link>
                         <Link href="/pages" className="text-gray-600 hover:text-gray-900">

@@ -4,8 +4,8 @@ import Badge from '@/shared/Badge';
 
 const HeroSection = ()=> {
   return (
-    <section className="flex items-center justify-center  min-h-screen bg-white">
-      <div className="container bg-[#F0F2F3] min-h-screen items-center flex justify-between  gap-12 px-6 lg:px-12 rounded-b-3xl">
+    <section className="flex items-center justify-center   bg-white">
+      <div className="container bg-[#F0F2F3] py-14 items-center flex justify-between  gap-12 px-6 lg:px-12 rounded-b-3xl">
         {/* Left Content */}
         <div className="text-left max-w-xl flex flex-col gap-3">
           <p className="text-sm text-gray-500 uppercase tracking-wide">Welcome To Chary</p>
