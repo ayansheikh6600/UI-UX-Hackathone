@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import chair2 from "@/assets/chair2.png"
 import Image from 'next/image'
-import { products } from '../page'
+import products from "@/Data"
 import Link from 'next/link'
 import { useParams, useRouter } from 'next/navigation';
 const Page = () => {

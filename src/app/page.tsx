@@ -3,7 +3,7 @@ import FAQSection from "@/widgets/FAQ";
 import FeaturesSection from "@/widgets/Feature";
 import HeroSection from "@/widgets/Hero";
 import Image from "next/image";
-import { products } from "./products/page";
+
 import ProductCard from "@/shared/ProductCard";
 import TopCategories from "@/widgets/Category";
 import zapier from "@/assets/zapier.png"
@@ -14,6 +14,7 @@ import z from "@/assets/z.png"
 import bank from "@/assets/bank.png"
 import burnt from "@/assets/burnt.png"
 import ChairGallery from "@/widgets/Gallery";
+import products from "@/Data"
 
 
 const CampaniesLogo: any = [zapier,
