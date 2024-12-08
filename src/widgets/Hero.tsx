@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import chairImage from '@/assets/chair.png'; // Replace with the correct image path
+import Badge from '@/shared/Badge';
 
 const HeroSection = ()=> {
   return (

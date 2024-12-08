@@ -14,6 +14,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        primary: "#029FAE", // Replace with your primary color hex
+        secondary: "#9333EA", // Replace with your secondary color hex
+      },
     },
   },
   plugins: [],
