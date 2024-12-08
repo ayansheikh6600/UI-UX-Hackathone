@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { products } from '../page'
 import Link from 'next/link'
 import { useParams, useRouter } from 'next/navigation';
-const page = () => {
+const Page = () => {
  const params = useParams()
 
  const [product, setProduct] = useState<any>()
@@ -135,4 +135,4 @@ useEffect(()=>{
     )
 }
 
-export default page
+export default Page
