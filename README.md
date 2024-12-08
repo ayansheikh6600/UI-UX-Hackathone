@@ -1,5 +1,4 @@
-# Let's create the content of the file
-file_content = """
+
 ## Comforty Project
 
 ### 👨‍💻 Developed by
@@ -69,10 +68,10 @@ Comforty/
 
 ###🛠️ Features
 ##✅ Key Features
-- **Redux for Add to Cart**: State management with Redux for shopping cart functionality.
-- **Fully Responsive Design**: Achieved with Tailwind CSS for a pixel-perfect, seamless user experience.
-- **TypeScript**: Ensures clean and maintainable code with type checking.
-- **Modular Architecture**: Components organized into widgets, shared, and layout for reusability.
-- **Reusable Components**: Components and widgets are designed to be shared across different parts of the app.
-- **Fast & SEO Friendly**: Built using the latest features from Next.js 14.
+- ****Redux for Add to Cart****: State management with Redux for shopping cart functionality.
+- ****Fully Responsive Design****: Achieved with Tailwind CSS for a pixel-perfect, seamless user experience.
+- ****TypeScript****: Ensures clean and maintainable code with type checking.
+-** **Modular Architecture****: Components organized into widgets, shared, and layout for reusability.
+- ****Reusable Components****: Components and widgets are designed to be shared across different parts of the app.
+- ****Fast & SEO Friendly****: Built using the latest features from Next.js 14.
 
