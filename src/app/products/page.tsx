@@ -1,13 +1,6 @@
 import ProductCard from '@/shared/ProductCard';
 import React from 'react'
-import product1 from '@/assets/categoryChar.png'
-import product2 from '@/assets/categoryChar1.png'
-import product3 from '@/assets/categoryChar2.png'
-import product4 from '@/assets/chair.png'
-import product5 from '@/assets/chair1.png'
-import product6 from '@/assets/chair2.png'
-import product7 from '@/assets/chair3.png'
-import product8 from '@/assets/chair4.png'
+
 import Link from 'next/link';
 import products from "@/Data"
 
