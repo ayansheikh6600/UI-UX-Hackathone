@@ -11,7 +11,7 @@ import product8 from '@/assets/chair4.png'
 import Link from 'next/link';
 
 
-export const products = [
+export const products:any[] = [
   { id: 1, image: product1, title: "Library Stool Chair", price: 20, badge: "New" },
   { id: 2, image: product2, title: "Library Stool Chair", price: 20, originalPrice: "$30", badge: "Sale" },
   { id: 3, image: product3, title: "Library Stool Chair", price: 20 },
@@ -27,7 +27,7 @@ export const products = [
 ]
 
 
-const page = () => {
+const ProductsPage  = () => {
 
   return (
     <div className="py-12 bg-white">
@@ -76,4 +76,4 @@ const page = () => {
 }
 
 
-export default page
+export default ProductsPage 
