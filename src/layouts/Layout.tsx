@@ -7,11 +7,14 @@ import Footer from './Footer'
 
 const Layout = ({children}:any) => {
   return (
-    <Provider store={store}>
+    <Provider store={store} >
+      <div className='text-black'>
+
 
         <Header/>
         {children}
         <Footer />
+      </div>
       </Provider>
   )
 }
